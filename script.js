@@ -218,6 +218,14 @@ document.querySelectorAll('.feature-card, .timeline-item').forEach(el => {
     observer.observe(el);
 });
 
+// Apply animation to testimonial cards
+document.querySelectorAll('.testimonial-card').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(50px)';
+    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    observer.observe(el);
+});
+
 // Form input focus effects
 document.querySelectorAll('input, textarea').forEach(input => {
     input.addEventListener('focus', function() {
