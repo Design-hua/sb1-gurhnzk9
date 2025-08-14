@@ -991,6 +991,10 @@ body {
     .university-grid {
         grid-template-columns: 1fr;
     }
+    
+    .materials-grid {
+        grid-template-columns: 1fr;
+    }
 
     .timeline {
         grid-template-columns: 1fr;
